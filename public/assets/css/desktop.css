@@ -1,0 +1,151 @@
+
+
+.only_mobile{
+    display: none;
+}
+
+.only_desktop{
+    display: block;
+}
+
+.chat, .email, .central{
+    grid-column: span 3;
+    border: none;
+}
+
+.info, .user {
+    grid-column: span 4;
+}
+
+.logo {
+    grid-column: span 4;
+}
+
+.contato{
+    grid-column: span 3;
+}
+
+.modal {
+    width: 90%;
+    /* height: 70%; */
+}
+
+.modal-header, .modal-body, .modal-footer, .formulario{
+    max-width: calc(90vw - 40px);
+}
+
+.formulario{
+    height: 140px;
+    left: 10px;
+    right: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#lbl_cidade{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+#sel_cidade{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+#lbl_curso{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+#sel_curso{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    max-width: 80%;
+}
+#lbl_modalidade{
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+#dv_espaco{
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+#chk_modalidade{
+    grid-row: 5/6;
+    grid-column: 1/2;
+}
+#lbl_valor{
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+#spn_range_valor{
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+#ipt_range_valor{
+    grid-row: 5/6;
+    grid-column: 2/3;
+    max-width: 80%;
+}
+
+.tabela{
+    height: 180px;
+}
+
+
+.linha{
+    grid-template-columns: 22px 120px 1fr 1fr;
+}
+
+.celula_checkbox{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.celula_logo{
+    grid-column: 2/3;  
+    grid-row: 1/2;  
+}
+
+.celula_curso{
+    grid-column: 3/4;  
+    grid-row: 1/2;  
+}
+
+.celula_valor{
+    grid-column: 4/5;  
+    grid-row: 1/2;  
+    text-align: right;
+}
+
+.modal-footer{
+    text-align: right;
+}
+
+#nav_semestres {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.semestre{
+    min-width: 0;
+}
+
+ul.breadcrumb {
+    padding: 5px;
+    list-style: none;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 10px;
+}
+ul.breadcrumb li+li:before {
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: #007A8D;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
